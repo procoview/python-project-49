@@ -1,3 +1,5 @@
+#!/usr/bin/env python3.
+
 # file <brain_games.py>
 
 def main():
