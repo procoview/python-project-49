@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # file <brain_even.py>
 
-from engine import *
+from brain_games.engine import *
 import brain_games.games.game_calc
 
 
