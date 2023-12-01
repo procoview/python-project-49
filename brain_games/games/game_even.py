@@ -18,4 +18,3 @@ def do_even():
         
 def main():
     do_even()
-
