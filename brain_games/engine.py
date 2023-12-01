@@ -2,15 +2,15 @@
 
 def launch_game(game):
     print("Welcome to the Brain Games!")
-    
+
     name = input("May I have your name? ")
-    
+
     print(f"Hello, {name}!")
-    
+
     question = game.question
-    
+
     print(question)
-    
+
     i = 0
     while i < 3:
         game.main()
@@ -21,6 +21,7 @@ def launch_game(game):
             i += 1
         else:
             i = 0
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
+            print(f"'{answer}' is wrong answer ;(. ", end='')
+            print("Correct answer was '{result}'.")
             print(f"Let's try again, {name}!")
     print(f"Congratulations, {name}!")
