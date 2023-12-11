@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# file <brain_even.py>
+# file <brain_gcd.py>
 
 import brain_games.engine
 import brain_games.games.game_gcd
