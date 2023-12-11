@@ -17,3 +17,7 @@ def do_gcd():
             rand_number2 = rand_number2 % rand_number1
     result = str(rand_number1 + rand_number2)
     print(f'Question: {rand_number1} {rand_number2}')
+
+
+def main():
+    do_gcd()
