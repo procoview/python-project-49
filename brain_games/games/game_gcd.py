@@ -1,7 +1,6 @@
 #<file game_gcd.py>
 
 from random import randint
-import math
 
 question = "Find the greatest common divisor of given numbers."
 
