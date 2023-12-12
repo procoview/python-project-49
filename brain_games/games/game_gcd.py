@@ -22,6 +22,7 @@ def do_gcd():
     rand_number2 = randint(0, 100)
     result = str(find_gcd(rand_number1, rand_number2))
     print(f'Question: {rand_number1} {rand_number2}')
+    return result
 
 
 def main():
