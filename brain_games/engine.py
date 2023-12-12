@@ -22,6 +22,6 @@ def launch_game(game):
         else:
             i = 0
             print(f"'{answer}' is wrong answer ;(. ", end='')
-            print("Correct answer was '{result}'.")
+            print(f"Correct answer was '{result}'.")
             print(f"Let's try again, {name}!")
     print(f"Congratulations, {name}!")
