@@ -14,6 +14,7 @@ def do_calc():
     random_operation = random.choice(list(operations.keys()))
     result = str(operations[random_operation](first_number, second_number))
     print(f'Question: {first_number} {random_operation} {second_number}')
+    return result
 
 
 def main():
