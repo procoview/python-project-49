@@ -20,6 +20,7 @@ def do_progression():
             print('..', end=" ")
         else:
             print(nums[i], end=" ")
+    return result
 
 
 def main():
