@@ -14,7 +14,7 @@ def do_progression():
         num += 2
     index = randint(0, 9)
     result = str(nums[index])
-    print(f'Question: ', end="")
+    print('Question: ', end="")
     for i in range(0, 10):
         if i == index:
             print('..', end=" ")
