@@ -3,7 +3,21 @@
 
 <a href="https://codeclimate.com/github/procoview/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/d2ca59d5d5d8b5e2763d/maintainability" /></a>
 
+Python version: 3.10
+
+Poetry version: 1.6.1
+
 This is my first project on Python. There are five console games.
+
+Installation steps:
+
+1. poetry install
+
+2. poetry build
+
+3. python3 -m pip install --user dist/*.whl
+
+Games:
 
 1. brain-even
 
