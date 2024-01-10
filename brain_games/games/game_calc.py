@@ -3,7 +3,7 @@
 import random
 import operator
 
-question = "What is the result of the expression?"
+QUESTION = "What is the result of the expression?"
 
 
 def do_calc():
