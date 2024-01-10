@@ -2,7 +2,7 @@
 
 from random import randint
 
-question = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
+QUESTION = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
 
 
 def do_prime():
