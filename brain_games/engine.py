@@ -7,7 +7,7 @@ def launch_game(game):
 
     print(f"Hello, {name}!")
 
-    question = game.question
+    question = game.QUESTION
 
     print(question)
 
