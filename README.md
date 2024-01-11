@@ -11,11 +11,11 @@ This is my first project on Python. There are five console games.
 
 Installation steps:
 
-1. poetry install
+1) poetry install
 
-2. poetry build
+2) poetry build
 
-3. python3 -m pip install --user dist/*.whl
+3) python3 -m pip install --user dist/*.whl
 
 Games:
 
