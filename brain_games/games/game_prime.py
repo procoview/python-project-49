@@ -16,6 +16,8 @@ def do_prime():
         result = "yes"
     else:
         result = "no"
+    if random_number == 0 or random_number == 1:
+        result = "no"
     print(f'Question: {random_number}')
     return result
 
