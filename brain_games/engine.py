@@ -11,7 +11,7 @@ def launch_game(game):
 
     print(question)
 
-    for i in range(0, 2):
+    for i in range(0, 3):
         result = game.main()
         answer = input("Your answer: ")
         if answer == result:
