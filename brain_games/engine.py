@@ -17,6 +17,7 @@ def launch_game(game):
         answer = input("Your answer: ")
         if answer == result:
             print("Correct!")
+            i += 1
         else:
             i = 0
             print(f"'{answer}' is wrong answer ;(. ", end='')
