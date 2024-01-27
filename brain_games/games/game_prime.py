@@ -5,8 +5,7 @@ from random import randint
 QUESTION = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
 
 
-def do_prime():
-    global result
+def main():
     random_number = randint(0, 100)
     k = 0
     for i in range(2, random_number):
@@ -20,7 +19,3 @@ def do_prime():
         result = "no"
     print(f'Question: {random_number}')
     return result
-
-
-def main():
-    do_prime()
