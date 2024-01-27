@@ -5,8 +5,7 @@ from random import randint
 QUESTION = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
 
 
-def do_even():
-    global result
+def main():
     random_number = randint(0, 100)
     if (random_number % 2 == 0):
         result = 'yes'
@@ -14,7 +13,3 @@ def do_even():
         result = 'no'
     print(f'Question: {random_number}')
     return result
-
-
-def main():
-    do_even()
