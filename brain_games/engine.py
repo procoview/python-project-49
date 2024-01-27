@@ -13,7 +13,7 @@ def launch_game(game):
 
     for i in range(0, 2):
         game.main()
-        result = game.result
+        result = game.main()
         answer = input("Your answer: ")
         if answer == result:
             print("Correct!")
