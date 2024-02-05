@@ -1,7 +1,6 @@
 # file <game_calc.py>
 
 import random
-import operator
 
 QUESTION = "What is the result of the expression?"
 
