@@ -1,26 +1,29 @@
 # file <engine.py>
 
-def launch_game(game):
-    print("Welcome to the Brain Games!")
+import prompt
 
-    name = input("May I have your name? ")
+
+def launch_game(game):
+    prompt.string("Welcome to the Brain Games!")
+
+    name = prompt.string("May I have your name? ")
 
     print(f"Hello, {name}!")
 
     question = game.QUESTION
 
-    print(question)
+    prompt.string(question)
 
     for i in range(0, 3):
         result = game.main()
-        answer = input("Your answer: ")
+        answer = prompt.string("Your answer: ")
         if answer == result:
-            print("Correct!")
+            prompt.string("Correct!")
             i += 1
         else:
             i = 0
-            print(f"'{answer}' is wrong answer ;(. ", end='')
-            print(f"Correct answer was '{result}'.")
-            print(f"Let's try again, {name}!")
+            prompt.string(f"'{answer}' is wrong answer ;(. ", end='')
+            prompt.string(f"Correct answer was '{result}'.")
+            prompt.string(f"Let's try again, {name}!")
             return
-    print(f"Congratulations, {name}!")
+    prompt.string(f"Congratulations, {name}!")
