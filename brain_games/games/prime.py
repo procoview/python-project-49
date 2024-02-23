@@ -19,7 +19,6 @@ def is_prime(number):
 
 
 def main():
-    random_number = randint(0, 100)
-    result = is_prime(random_number)
-    print(f'Question: {random_number}')
-    return result
+    question = randint(0, 100)
+    result = is_prime(question)
+    return result, question
