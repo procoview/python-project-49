@@ -16,5 +16,5 @@ def main():
     operations = [['+', operator.add], ['-', operator.sub], ['*', operator.mul]]
     random_operation = random.choice(operations)
     result = str(is_calc(first_number, random_operation, second_number))
-    print(f'Question: {first_number} {random_operation[0]} {second_number}')
-    return result
+    question = f'{first_number} {random_operation[0]} {second_number}'
+    return result, question
