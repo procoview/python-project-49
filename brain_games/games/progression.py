@@ -24,5 +24,5 @@ def main():
     progression = generate_progression()
     list_progression = progression.split()
     result = choice(list_progression)
-    print(f'Question: {progression.replace(result, "..")}')
-    return result
+    question = progression.replace(result, "..")
+    return result, question
