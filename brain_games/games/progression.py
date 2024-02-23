@@ -17,7 +17,7 @@ def main():
     progression = generate_progression(start_num, end_num, step_size)
     index = randint(0, 9)
     result = str(progression[index])
-    str_progression = ', '.join(progression)
+    str_progression = ', '.join(str(x) for x in progression)
     filtered_progression = str_progression.replace(result, '..')
     print(f'Question: {filtered_progression}')
     return result
