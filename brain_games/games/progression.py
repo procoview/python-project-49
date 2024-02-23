@@ -18,5 +18,6 @@ def main():
     index = randint(0, 9)
     result = str(progression[index])
     str_progression = ', '.join(progression)
-    print(f'Question: {str_progression.replace(result, '..')}')
+    filtered_progression = str_progression.replace(result, '..')
+    print(f'Question: {filtered_progression}')
     return result
