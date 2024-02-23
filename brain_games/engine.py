@@ -17,7 +17,8 @@ def launch_game(game):
     print(question)
 
     for i in range(0, COUNTER):
-        result = game.main()
+        result, question = game.main()
+        print(f'Question: {question}')
         answer = prompt.string("Your answer: ")
         if answer == result:
             print("Correct!")
