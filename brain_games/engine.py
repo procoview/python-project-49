@@ -4,6 +4,7 @@ import prompt
 
 COUNTER = 3
 
+
 def launch_game(game):
     print("Welcome to the Brain Games!")
 
