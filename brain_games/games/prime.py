@@ -11,14 +11,14 @@ def is_prime(number):
         if (number % i == 0):
             k = k + 1
     if (k <= 0):
-        return "yes"
+        return True
     elif number == 0 or number == 1:
-        return "no"
+        return True
     else:
-        return "no"
+        return False
 
 
 def main():
     question = randint(0, 100)
-    result = is_prime(question)
-    return result, question
+    result = {True:'yes', False:'no'}
+    return result[is_prime(question)], question
