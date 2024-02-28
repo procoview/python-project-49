@@ -20,5 +20,5 @@ def is_prime(number):
 
 def main():
     question = randint(0, 100)
-    result = {True:'yes', False:'no'}
+    result = {True: 'yes', False: 'no'}
     return result[is_prime(question)], question
