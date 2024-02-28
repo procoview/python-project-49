@@ -2,7 +2,7 @@
 
 import prompt
 
-COUNTER = 3
+ROUNDS_COUNT = 3
 
 
 def launch_game(game):
@@ -16,15 +16,14 @@ def launch_game(game):
 
     print(question)
 
-    for i in range(0, COUNTER):
+    for _ in range(ROUNDS_COUNT):
         result, question = game.main()
         print(f'Question: {question}')
         answer = prompt.string("Your answer: ")
-        if answer == result:
-            print("Correct!")
-        else:
+        if answer != result:
             print(f"'{answer}' is wrong answer ;(. ", end='')
             print(f"Correct answer was '{result}'.")
             print(f"Let's try again, {name}!")
             return
+        print("Correct!")
     print(f"Congratulations, {name}!")
