@@ -10,8 +10,7 @@ def main():
     start = random.randint(1, 10)  
     diff = random.randint(1, 5)  
     progression = list(range(start, start + diff * length, diff))
-    index = random.randint(0, 9)
-    result = str(progression[index])
+    result = str(random.choice(progression))
     str_progression = ', '.join(str(x) for x in progression)
     question = str_progression.replace(result, '..')
     return result, question
