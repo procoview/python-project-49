@@ -11,7 +11,7 @@ def main():
     diff = random.randint(1, 5)  
     progression = list(range(start, start + diff * length, diff))
     random_index = random.randint(0, len(progression) - 1)
-    result = progression[random_index]
+    result = str(progression[random_index])
     progression[random_index] = '..'
     question = ', '.join(str(x) for x in progression)
     return result, question
