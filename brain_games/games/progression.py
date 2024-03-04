@@ -1,28 +1,18 @@
 # file <game_progression.py>
 
-from random import randint, choice
+import random
 
 QUESTION = "What number is missing in the progression?"
 
 
-def generate_progression():
-    result = randint(1, 40)
-    step = randint(2, 9)
-    start = 0
-    stop = randint(5, 10)
-    result_progression = ''
-
-    while start <= stop:
-        result = result + step
-        start = start + 1
-        result_progression = result_progression + f'{str(result)} '
-
-    return result_progression
-
-
 def main():
-    progression = generate_progression()
-    list_progression = progression.split()
-    result = choice(list_progression)
-    question = progression.replace(result, "..")
-    return result, question
+    length = random.randint(5, 10)  
+    start = random.randint(1, 10)  
+    diff = random.randint(1, 5)  
+    progression = list(range(start, start + diff * length, diff))
+    index = random.randint(0, 9)
+    result = str(progression[index])
+    str_progression = ', '.join(str(x) for x in progression)
+    filtered_progression = str_progression.replace(result, '..')
+    print(f'Question: {filtered_progression}')
+    return result
