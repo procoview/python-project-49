@@ -11,7 +11,7 @@ packages = [
 classifiers = [
     "Development Status :: 6 - Mature",
     "Operating System :: Unix",
-    "Topic :: Games/Entertainment :: Puzzle Games"
+    "Topic :: Games/Entertainment :: Puzzle Games",
     "Programming Language :: Python :: 3",
 ]
 
