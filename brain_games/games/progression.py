@@ -13,5 +13,5 @@ def main():
     random_index = random.randint(0, len(progression) - 1)
     result = str(progression[random_index])
     progression[random_index] = '..'
-    question = ', '.join(str(x) for x in progression)
+    question = ' '.join(str(x) for x in progression)
     return result, question
