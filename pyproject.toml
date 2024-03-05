@@ -8,6 +8,12 @@ readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Operating System :: Unix",
+    "Topic :: Games/Entertainment :: Puzzle Games"
+    "Programming Language :: Python :: 3",
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
