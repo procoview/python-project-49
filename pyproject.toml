@@ -12,7 +12,7 @@ classifiers = [
     "Development Status :: 6 - Mature",
     "Operating System :: Unix",
     "Topic :: Games/Entertainment :: Puzzle Games",
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3"
 ]
 
 [tool.poetry.dependencies]
