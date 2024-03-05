@@ -12,9 +12,9 @@ def launch_game(game):
 
     print(f"Hello, {name}!")
 
-    question = game.QUESTION
+    play = game.QUESTION
 
-    print(question)
+    print(play)
 
     for _ in range(ROUNDS_COUNT):
         result, question = game.main()
