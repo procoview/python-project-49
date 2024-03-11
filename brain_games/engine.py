@@ -17,7 +17,7 @@ def launch_game(game):
     print(question)
 
     for _ in range(ROUNDS_COUNT):
-        result, question = game.main()
+        result, question = game.generate_game()
         print(f'Question: {question}')
         answer = prompt.string("Your answer: ")
         if answer != result:
