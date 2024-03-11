@@ -6,7 +6,7 @@ import math
 QUESTION = "Find the greatest common divisor of given numbers."
 
 
-def main():
+def generate_game():
     rand_number1 = randint(0, 100)
     rand_number2 = randint(0, 100)
     result = str(math.gcd(rand_number1, rand_number2))
