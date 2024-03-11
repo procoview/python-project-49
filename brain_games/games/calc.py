@@ -6,7 +6,7 @@ import operator
 QUESTION = "What is the result of the expression?"
 
 
-def main():
+def generate_game():
     first_number = random.randint(0, 100)
     second_number = random.randint(0, 100)
     operations = [['+', operator.add], ['-', operator.sub], ['*', operator.mul]]
