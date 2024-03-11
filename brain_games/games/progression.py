@@ -5,11 +5,12 @@ import random
 QUESTION = "What number is missing in the progression?"
 
 
-def main():
+def generate_game():
     length = random.randint(5, 10)
     start = random.randint(1, 10)
-    diff = random.randint(1, 5)
-    progression = list(range(start, start + diff * length, diff))
+    step = random.randint(1, 5)
+    end = start + step * length
+    progression = list(range(start, end, step))
     random_index = random.randint(0, len(progression) - 1)
     result = str(progression[random_index])
     progression[random_index] = '..'
